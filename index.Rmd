@@ -1,4 +1,5 @@
-ubtitle    : 
+title       : Expolore the mtcars dataset
+subtitle    : 
 author      : Haiqiang Zhang
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
