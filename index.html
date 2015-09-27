@@ -67,11 +67,11 @@
     <h2>Relationship Between WT and MPG</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">ggplot(data=mtcars,aes(x=wt,y=mpg)) + geom_point() + geom_smooth()
+    <pre><code class="r">library(ggplot2)
+ggplot(data=mtcars,aes(x=wt,y=mpg)) + geom_point() + geom_smooth()
 </code></pre>
 
-<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;ggplot&quot;
-</code></pre>
+<p><img src="assets/fig/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /></p>
 
   </article>
   <!-- Presenter Notes -->

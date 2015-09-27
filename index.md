@@ -31,12 +31,11 @@ head(mtcars)
 ## Relationship Between WT and MPG
 
 ```r
+library(ggplot2)
 ggplot(data=mtcars,aes(x=wt,y=mpg)) + geom_point() + geom_smooth()
 ```
 
-```
-## Error in eval(expr, envir, enclos): could not find function "ggplot"
-```
+<img src="assets/fig/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 
 --- 
 
