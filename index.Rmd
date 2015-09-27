@@ -1,0 +1,39 @@
+ubtitle    : 
+author      : Haiqiang Zhang
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+```{r, warning=FALSE}
+head(mtcars)
+```
+
+--- 
+
+## Relationship Between WT and MPG
+```{r, warning=FALSE, message=FALSE, fig.align='center', fig.height=6,fig.width=10}
+ggplot(data=mtcars,aes(x=wt,y=mpg)) + geom_point() + geom_smooth()
+```
+
+--- 
+
+## Expore Two Variable
+```{r, warning=FALSE, message=FALSE, fig.align='center', fig.height=6,fig.width=10}
+ggplot(data=mtcars,aes(x=wt,y=mpg)) + geom_point(aes(color=factor(cyl))) + geom_smooth()
+```
+
+--- 
+
+## Build A Linear Model
+```{r }
+fit = lm(mpg ~ wt + factor(cyl), data=mtcars)
+fit$coefficients
+```
+
+
